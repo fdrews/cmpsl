@@ -1,9 +1,12 @@
 import * as React from 'react'
 
-export default function West({ children }) {
+export default function West() {
   return (
     <>
-      <div>replace me!</div>
+      <div>
+        I am the opposite of the east component. So for u. I am a sidebar on the
+        right side.
+      </div>
     </>
   )
 }
