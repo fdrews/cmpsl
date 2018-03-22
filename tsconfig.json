@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "@lib": [
+        "./"
+      ]
+    },
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "target": "es6",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./.seagull/dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [
+      "esnext"
+    ],
+    "jsx": "react",
+    "rootDir": "./"
+  },
+  "include": [
+    "backend/**/*",
+    "frontend/**/*",
+    "models/**/*",
+    "test/**/*"
+  ],
+  "types": [
+    "node"
+  ],
+  "typeRoots": [
+    "node_modules/@types"
+  ],
+  "lib": [
+    "es5",
+    "es6",
+    "es7",
+    "dom",
+    "dom.iterable"
+  ]
+}

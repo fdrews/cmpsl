@@ -1,0 +1,24 @@
+{
+  "name": "compassl",
+  "version": "0.1.0",
+  "description": "my new seagull app",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 6.10.3 < 7"
+  },
+  "dependencies": {
+    "@seagull/core": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/history": "^4.6.0",
+    "@types/node": "^8.0.25",
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "@types/react-router": "^4.0.15",
+    "@types/react-router-config": "^1.0.4",
+    "@types/react-router-dom": "^4.0.8",
+    "aws-sdk": "^2.212.1",
+    "typescript": "^2.7.2"
+  }
+}
