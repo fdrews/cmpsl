@@ -8,7 +8,8 @@
     "node": ">= 6.10.3 < 7"
   },
   "dependencies": {
-    "@seagull/core": "^0.8.5"
+    "@seagull/core": "^0.8.5",
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
     "@types/history": "^4.6.0",
