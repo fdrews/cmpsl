@@ -1,15 +1,17 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 
-const baseLayout = {
+const baseStyleLayout = {
   display: 'grid',
   height: '100vh',
 }
+
+const northWestSouthGrid = {}
 
 export default function Layout({ children }) {
   const numElements = React.Children.forEach(children, (child, key) => {
     console.log('child: ', child)
   })
 
-  return <div style={baseLayout}>replace me!</div>
+  return <div style={baseStyleLayout}>replace me!</div>
 }

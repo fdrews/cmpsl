@@ -1,11 +1,16 @@
 import * as React from 'react'
 
-export default function East({ children }) {
+const baseStyleEast = {
+  gridArea: 'east',
+  backgroundColor: 'lightblue',
+}
+
+export default function East() {
   return (
     <>
-      <div>
-        Do u know the DDR? There`s no connection between me and the DDR ;). I am
-        a Sidebar on the left site. Keep it in your mind.
+      <div style={baseStyleEast}>
+        Do u know the GDR? There`s no connection between me and the GDR . I am a
+        Sidebar on the left site. Keep it in your mind.
       </div>
     </>
   )

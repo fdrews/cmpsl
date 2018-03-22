@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Page } from '@seagull/core'
 
 import Layout from '../components/Layout'
-import Header from '../components/Header'
+import North from '../components/North'
 
 export default class HelloPage extends Page<{}, {}> {
   /**
@@ -18,7 +18,7 @@ export default class HelloPage extends Page<{}, {}> {
       <div>
         <Layout>
           <div>BLUBB</div>
-          <Header />
+          <North />
         </Layout>
       </div>
     )

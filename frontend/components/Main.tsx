@@ -1,9 +1,16 @@
 import * as React from 'react'
 
-export default function Main({ children }) {
+const baseStyleMain = {
+  gridArea: 'main',
+  backgroundColor: 'yellow',
+}
+
+export default function Main() {
   return (
     <>
-      <div>I am responsable for the Content. Do what u want to do!</div>
+      <div style={baseStyleMain}>
+        I am responsable for the Content. Do what u want to do!
+      </div>
     </>
   )
 }
