@@ -3,9 +3,12 @@ import * as React from 'react'
 const baseStyleSouth = {
   gridArea: 'south',
   backgroundColor: 'blue',
+  height: '100px',
 }
 
-export default function South() {
+const gridArea = 'south'
+
+const southFunc = () => {
   return (
     <>
       <div style={baseStyleSouth}>
@@ -15,3 +18,7 @@ export default function South() {
     </>
   )
 }
+
+const South = Object.assign(southFunc, { gridArea })
+
+export default South

@@ -5,21 +5,29 @@ import { merge } from 'lodash'
 
 const baseStyleLayout = {
   display: 'grid',
+  gridTemplateRows: 'auto 1fr auto',
+  gridTemplateColumns: 'auto 1fr auto',
   height: '100vh',
 }
 
-const northSouthWestGrid = {
-  gridTemplateRows: 'auto 1fr auto',
-  gridTemplateColumns: 'auto 1fr',
+/*const northGrid = {
+  gridTemplateAreas: '"north north" "main main" "main main"',
+}
+
+const northSouthGrid = {
+  gridTemplateAreas: '"north north" "main main" "south south"',
+}
+
+const northWestSouthGrid = {
   gridTemplateAreas: '"north north" "west main" "south south"',
+}*/
+
+const Layout = ({ children }) => {
+  let gridLayout = {}
+  const numChilds = React.Children.count(children)
+  return <div style={merge(baseStyleLayout, gridLayout)}>{children}</div>
 }
 
-export default function Layout({ children }) {
-  const numElements = React.Children.forEach(children, (child, key) => {
-    console.log('child: ', child)
-  })
+function setGridLayout(main?, north?, east?, south?, west?) {}
 
-  return (
-    <div style={merge(baseStyleLayout, northSouthWestGrid)}>{children}</div>
-  )
-}
+export default Layout

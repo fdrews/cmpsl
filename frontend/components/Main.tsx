@@ -1,16 +1,22 @@
 import * as React from 'react'
+import { merge } from 'lodash'
 
 const baseStyleMain = {
-  gridArea: 'main',
-  backgroundColor: 'yellow',
+  backgroundColor: 'orange',
 }
 
-export default function Main() {
+const gridArea = 'main'
+
+const mainFunc = () => {
   return (
     <>
-      <div style={baseStyleMain}>
-        I am responsable for the Content. Do what u want to do!
+      <div style={merge(baseStyleMain, { gridArea })}>
+        I am responsable for the content. Do what u want to do!
       </div>
     </>
   )
 }
+
+const Main = Object.assign(mainFunc, { gridArea })
+
+export default Main
